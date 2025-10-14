@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background: #2a2064;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+
+.response-box {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.subtask-list {
+  display: block; 
+  gap: 15px; 
+}
+
+.subtask-card {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  width: 100%; 
+  margin-bottom: 15px; 
+}
+
+
+.priority-high {
+  border-left: 5px solid red;
+}
+.priority-medium {
+  border-left: 5px solid orange;
+}
+.priority-low {
+  border-left: 5px solid green;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+textarea {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1e1550;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
